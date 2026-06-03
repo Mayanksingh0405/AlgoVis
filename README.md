@@ -1,113 +1,228 @@
-# Algorithm Visualiser - React Version
+ 🚀 Algorithm Visualizer
 
-A beautiful and interactive sorting algorithm visualiser built with React. Watch 7 different sorting algorithms in action with real-time animations and color-coded bars.
+An interactive and visually appealing **Sorting Algorithm Visualizer** built with **React.js** that helps users understand how different sorting algorithms work through real-time animations and color-coded visual feedback.
 
-## Features
+Perfect for students, educators, and developers who want to learn or demonstrate sorting algorithms in an engaging way.
 
-- **7 Sorting Algorithms**: Quick Sort, Bubble Sort, Insertion Sort, Selection Sort, Heap Sort, Merge Sort, Shell Sort
-- **Real-time Visualization**: Watch bars move and change colors as algorithms sort
-- **Interactive Controls**: Adjust number of bars, generate new arrays, stop/reset sorting
-- **Beautiful UI**: Modern gradient design with smooth animations
-- **Responsive**: Works on desktop and mobile devices
+---
 
-## Color Coding
+## ✨ Features
 
-- **Blue**: Default state
-- **Red**: Currently being compared
-- **Orange**: Current element being processed
-- **Green**: Sorted elements
+* 📊 Visualize **7 Popular Sorting Algorithms**
+* 🎨 Real-time color-coded animations
+* ⚡ Adjustable animation speed
+* 🔢 Dynamic array generation
+* 📏 Adjustable number of bars
+* ⏹ Stop sorting at any time
+* 🔄 Reset and regenerate arrays instantly
+* 📱 Fully responsive design
+* 🌈 Modern gradient-based UI
 
-## Getting Started
+---
 
-### Prerequisites
+## 🎥 Supported Sorting Algorithms
 
-- Node.js (version 14 or higher)
-- npm or yarn
+| Algorithm      | Best Case           | Average Case            | Worst Case | Space Complexity |
+| -------------- | ------------------- | ----------------------- | ---------- | ---------------- |
+| Quick Sort     | O(n log n)          | O(n log n)              | O(n²)      | O(log n)         |
+| Bubble Sort    | O(n)                | O(n²)                   | O(n²)      | O(1)             |
+| Insertion Sort | O(n)                | O(n²)                   | O(n²)      | O(1)             |
+| Selection Sort | O(n²)               | O(n²)                   | O(n²)      | O(1)             |
+| Heap Sort      | O(n log n)          | O(n log n)              | O(n log n) | O(1)             |
+| Merge Sort     | O(n log n)          | O(n log n)              | O(n log n) | O(n)             |
+| Shell Sort     | O(n log n) to O(n²) | Depends on gap sequence | O(n²)      | O(1)             |
 
-### Installation
+---
 
-1. Install dependencies:
+## 🎨 Visualization Color Guide
+
+| Color     | Meaning                  |
+| --------- | ------------------------ |
+| 🔵 Blue   | Unsorted / Default State |
+| 🔴 Red    | Elements Being Compared  |
+| 🟠 Orange | Current Active Element   |
+| 🟢 Green  | Sorted Elements          |
+
+---
+
+## 📸 Application Preview
+
+Add screenshots or GIFs here:
+
+```md
+![Sorting Visualizer Demo](./screenshots/demo.gif)
+```
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+
+* React 18
+* JavaScript (ES6+)
+* CSS3
+* React Hooks
+
+### Concepts Used
+
+* State Management with Hooks
+* Async Animations
+* Recursive Algorithms
+* DOM Rendering Optimization
+* Data Visualization
+
+---
+
+## 📂 Project Structure
+
+```text
+algorithm-visualizer/
+│
+├── public/
+│   └── index.html
+│
+├── src/
+│   ├── App.js
+│   ├── index.js
+│   └── index.css
+│
+├── package.json
+├── README.md
+└── .gitignore
+```
+
+---
+
+## 🚀 Installation
+
+### Clone Repository
+
+```bash
+git clone https://github.com/yourusername/algorithm-visualizer.git
+```
+
+### Navigate to Project
+
+```bash
+cd algorithm-visualizer
+```
+
+### Install Dependencies
+
 ```bash
 npm install
 ```
 
-2. Start the development server:
+### Run Development Server
+
 ```bash
 npm start
 ```
 
-3. Open [http://localhost:3000](http://localhost:3000) in your browser
+The application will start at:
 
-## How to Use
-
-1. **Generate Array**: Click "Generate Array" to create a new random array
-2. **Adjust Bars**: Use the slider to change the number of bars (5-50)
-3. **Choose Algorithm**: Click any sorting algorithm button to start visualization
-4. **Control**: Use "Stop Sorting" to pause or "Reset" to start over
-
-## Available Algorithms
-
-### Quick Sort
-- **Time Complexity**: O(n log n) average, O(n²) worst case
-- **Space Complexity**: O(log n)
-- **Best for**: Large datasets, in-place sorting
-
-### Bubble Sort
-- **Time Complexity**: O(n²)
-- **Space Complexity**: O(1)
-- **Best for**: Educational purposes, small datasets
-
-### Insertion Sort
-- **Time Complexity**: O(n²)
-- **Space Complexity**: O(1)
-- **Best for**: Small datasets, nearly sorted data
-
-### Selection Sort
-- **Time Complexity**: O(n²)
-- **Space Complexity**: O(1)
-- **Best for**: Small datasets, minimal memory usage
-
-### Heap Sort
-- **Time Complexity**: O(n log n)
-- **Space Complexity**: O(1)
-- **Best for**: In-place sorting with guaranteed performance
-
-### Merge Sort
-- **Time Complexity**: O(n log n)
-- **Space Complexity**: O(n)
-- **Best for**: Stable sorting, large datasets
-
-### Shell Sort
-- **Time Complexity**: O(n log n) to O(n²) depending on gap sequence
-- **Space Complexity**: O(1)
-- **Best for**: Medium-sized datasets, improvement over insertion sort
-
-## Technologies Used
-
-- **React 18**: Modern React with hooks
-- **CSS3**: Custom styling with gradients and animations
-- **JavaScript ES6+**: Modern JavaScript features
-
-## Project Structure
-
-```
-src/
-├── App.js          # Main React component
-├── index.js        # React entry point
-└── index.css       # Global styles
-
-public/
-└── index.html      # HTML template
+```text
+http://localhost:3000
 ```
 
-## Contributing
+---
 
-Feel free to contribute by:
-- Adding new sorting algorithms
-- Improving the UI/UX
-- Adding performance metrics
-- Fixing bugs
+## 📖 How to Use
 
-## License
+### Generate a New Array
 
-This project is open source and available under the MIT License. 
+Click **Generate Array** to create a new random dataset.
+
+### Change Number of Bars
+
+Use the slider to increase or decrease the number of bars.
+
+### Select an Algorithm
+
+Choose any sorting algorithm to begin visualization.
+
+### Observe the Process
+
+Watch elements being compared, swapped, and sorted in real time.
+
+### Stop or Reset
+
+* Stop the current visualization
+* Reset the array
+* Generate a fresh dataset
+
+---
+
+## 🎯 Educational Benefits
+
+This project helps users understand:
+
+* Sorting algorithm behavior
+* Time complexity differences
+* Space complexity trade-offs
+* Recursion concepts
+* Divide-and-conquer techniques
+* Data structure fundamentals
+
+---
+
+## 🔮 Future Improvements
+
+* Speed Control Slider
+* Dark / Light Theme Toggle
+* Sound Effects
+* Algorithm Comparison Mode
+* Performance Metrics Dashboard
+* Searching Algorithm Visualizer
+* Pathfinding Visualizer
+* Custom Array Input
+* Sorting Statistics
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome.
+
+To contribute:
+
+1. Fork the repository
+2. Create a feature branch
+
+```bash
+git checkout -b feature-name
+```
+
+3. Commit your changes
+
+```bash
+git commit -m "Add new feature"
+```
+
+4. Push to your branch
+
+```bash
+git push origin feature-name
+```
+
+5. Open a Pull Request
+
+---
+
+## ⭐ Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👨‍💻 Author
+
+Developed with ❤️ using React.js to make learning sorting algorithms more interactive and engaging.
+
